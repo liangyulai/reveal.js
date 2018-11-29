@@ -1,8 +1,8 @@
-An Introduction of Encryption & Cryptography
+###### An Introduction of Cryptography
 
 +++
 
-### 密码学 Cryptography/Cryptology 
+###### 密码学 Cryptography/Cryptology 
 
 ![Lorenz-SZ42](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Lorenz-SZ42-2.jpg/640px-Lorenz-SZ42-2.jpg)
 
@@ -10,20 +10,20 @@ An Introduction of Encryption & Cryptography
 
 +++
 
-### 密码学 Cryptology
+###### 密码学 Cryptology
 
 > (from the Greek kryptós, "hidden," and lógos, "word") is the science of secure (or, generally speaking, secret) communication. This security requires that legitimate users, a transmitter and a receiver, are able to transform information into a cipher by virtue of a key –that is, a piece of information known only to them. Although the cipher is inscrutable and often unforgeable to anyone without this secret key, the authorized receiver can either decrypt the cipher to recover the hidden information or verify that it was sent in all likelihood by someone possessing the key.
 
 
 +++
 
-### 密码编码学 Cryptography
+###### 密码编码学 Cryptography
 
 > was concerned initially with providing secrecy for written messages. Its principles apply equally well, however, to securing data flow between computers or to encrypting television signals. Today, the modern (mathematical) science of cryptology is not just a set of encryption mechanisms. It has since been applied to a broad range of aspects of modern life, including data and message integrity, electronic signatures, random numbers, secure key exchange, secure containers, electronic voting, and electronic money.
 
 +++
 
-### Encryption terminology
+###### Encryption terminology
 
 * cipher: A synonym for the algorithm used in transforming plain text to ciphertext
 * 明文 plaintext: message to be sent, in readable form
@@ -34,13 +34,13 @@ An Introduction of Encryption & Cryptography
 
 +++
 
-### reference
+###### reference
 
 * [Wikipedia: Cryptography](https://en.wikipedia.org/wiki/Cryptography)
 
 ---
 
-### Cryptography Benefits
+###### Cryptography Benefits
 
 * 信息的机密性 Confidentiality
     * Information can be made effectively unavailable or unreadable for unauthorized individuals, entities, and processes.
@@ -52,14 +52,14 @@ An Introduction of Encryption & Cryptography
     * The receiver can prove that the message he or she received is precisely what the sender sent; the sender will have no means to deny any part of his or her participation.
 
 +++
-### usage
+###### usage
 
 * ATM Cards
 * Computer paswords
 * Electronic commerce
 
 ---
-### Symmetric Key Cryptography & Asymmetric Key Cryptography
+###### Symmetric Key Cryptography & Asymmetric Key Cryptography
 
 * 对称密码 Symmetric Key Cryptography: 
     * 传统密码 Conventional cryptogrphy
@@ -74,7 +74,7 @@ An Introduction of Encryption & Cryptography
 
 ---
 
-### 对称密码 Symmetric-key cryptography
+###### 对称密码 Symmetric-key cryptography
 * Stream ciphers
     * OTP
     * RC4
@@ -88,9 +88,11 @@ An Introduction of Encryption & Cryptography
 
 +++
 
-### 对称密码 Symmetric-key cryptography(1)
+###### 对称密码 Symmetric-key cryptography(1)
  
 ![Skytale](https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Skytale.png/800px-Skytale.png)
+
++++
 
 ```
        | I | a | m | h | u |  |
@@ -116,7 +118,7 @@ An Introduction of Encryption & Cryptography
 
 +++
 
-## Enigma machine
+###### Enigma machine
 
 ![](http://www.crypto-it.net/Images/simple_ciphers/rotor_machines/enigma_eng.png)
 
@@ -124,14 +126,14 @@ An Introduction of Encryption & Cryptography
 
 +++
 
-## 对称密码 Symmetric-key cryptography(2)
+###### 对称密码 Symmetric-key cryptography(2)
 ![Sigaba](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/SIGABA-patent.png/800px-SIGABA-patent.png)
 
 >  ECM Mark II was a cipher machine used by the United States for message encryption from World War II until the 1950s. The machine was also known as the SIGABA or Converter M-134 by the Army, or CSP-888/889 by the Navy, and a modified Navy version was termed the CSP-2900. 
 
 +++
 
-## 对称密码 Symmetric-key cryptography(3)
+###### 对称密码 Symmetric-key cryptography(3)
 
 ![Symmetric-key cryptography](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Symmetric_key_encryption.svg/500px-Symmetric_key_encryption.svg.png)
 
@@ -141,16 +143,16 @@ An Introduction of Encryption & Cryptography
 
 ---
 
-## 公钥密码 Public-key cryptography(1)
+###### 公钥密码 Public-key cryptography(1)
 
-![Public-key cryptography](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Public_key_encryption.svg/500px-Public_key_encryption.svg.png)
+![Public-key cryptography](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Public_key_encryption.svg/500px-Public_key_encryption.png)
 
 1. Bob encrypted a message with Alice's public key
 2. Alice decrpyted Bob's message with her private key
 
 +++
 
-## 公钥密码 Public-key cryptography(2)
+###### 公钥密码 Public-key cryptography(2)
 
 ![Public-key cryptography](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Private_key_signing.png/500px-Private_key_signing.png)
 
@@ -173,11 +175,11 @@ An Introduction of Encryption & Cryptography
 
 ---
 
-## 消息摘要和数字签名(Digital Signature)
+###### 消息摘要和数字签名(Digital Signature)
 
 +++
 
-## Simple diagram of the process of digital Signing and verification
+###### Simple diagram of the process of digital Signing and verification
 
 ![](https://cdn-images-1.medium.com/max/1400/1*UCn_xX0AOLxMKTb0xOeWfg.png)
 
@@ -192,7 +194,7 @@ An Introduction of Encryption & Cryptography
 
 ---
 
-### 散列函数 Hash functions
+###### 散列函数 Hash functions
 
 * 高速的完整性鉴别
 * 防止发送信息的一方否认曾经发送信息
@@ -200,23 +202,23 @@ An Introduction of Encryption & Cryptography
 
 +++
 
-### MD5 
+###### MD5 
 
 * 128bit
 
 +++
 
-### SHA1/SHA2
+###### SHA1/SHA2
 
 * SHA-1(160bit), SHA-2(256/384/512bit)
 
 +++
 
-### Message Authentication Code (MAC)
+###### Message Authentication Code (MAC)
 
 +++
 
-### Hash-Based Message Authentication Code (HMAC)
+###### Hash-Based Message Authentication Code (HMAC)
 
 
 
@@ -238,7 +240,7 @@ An Introduction of Encryption & Cryptography
 ---
 
 
-## reference 
+###### reference 
 
 [Portal: Cryptography](https://en.wikipedia.org/wiki/Portal:Cryptography)
 [Outline of Cryptography](https://en.wikipedia.org/wiki/Outline_of_cryptography)
