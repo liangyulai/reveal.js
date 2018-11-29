@@ -217,13 +217,13 @@ $PS1
 - printenv
 - set/export/setenv
 
-```
+```bash
 bash as a login shell
     - /etc/profile
-    - ~/.bsh_profile
-    - ~/.bash_login
-    - ~/.profile
-    - ~/.bashrc
+    - ~/.bash_profile # loaded when you login. It is read only once.
+    - ~/.bash_login   
+    - ~/.profile      
+    - ~/.bashrc       # loaded everytime you start a shell(e.g. starting terminal)
 ```
 ```
 tcsh as a login shell
