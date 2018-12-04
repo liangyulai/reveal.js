@@ -6,7 +6,7 @@ What is cryptogrphy?
 
 ![Lorenz-SZ42](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Lorenz-SZ42-2.jpg/640px-Lorenz-SZ42-2.jpg)
 
-Notes:
+Note:
 > Cryptography or cryptology is the practice and study of techniques for secure communication in the presence of third parties called adversaries.
 
 ### 密码学 (Cryptography/Cryptology)
@@ -19,7 +19,7 @@ Notes:
 * 密码编码学 (Cryptography)
 * 密码分析学 (Cryptanalysis)
 
-Notes:
+Note:
 > was concerned initially with providing secrecy for written messages...
 
 
@@ -33,7 +33,7 @@ Notes:
 * 加密 encrypt(encipher)
 * 解密 decrypt(decipher)
 
-Notes:
+Note:
 * 密码分析 cryptanalysis
     * algorithm for transforming plaintext to ciphertext
     * message to be sent, in readable form
@@ -229,7 +229,7 @@ ECM Mark II was a cipher machine used by the United States for message encryptio
 ![Public key](https://dzone.com/storage/temp/7395826-publickeyencryption.png)
 
 
-Notes:
+Note:
 
 ![Symmetric-key cryptography](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Symmetric_key_encryption.svg/500px-Symmetric_key_encryption.png)
 
@@ -266,7 +266,7 @@ Notes:
 
 ![](https://www.docusign.com/sites/default/files/ds_subpage_diagram2.svg)
 
-Notes:
+Note:
 ### Simple diagram of the process of digital Signing and verification
 
 ![](images/digital_signature_and_verification.png)
@@ -307,7 +307,7 @@ Notes:
 
 * Hash-Based Message Authentication Code
 
-Notes:
+Note:
 ### Base64
 [](https://en.wikipedia.org/wiki/Base64)
 [](https://www.pixelstech.net/article/1457585550-How-does-Base64-work)
