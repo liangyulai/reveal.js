@@ -2,41 +2,56 @@
 
 --
 
-### 密码学 (Cryptography/Cryptology)
+What is cryptogrphy?
 
 ![Lorenz-SZ42](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Lorenz-SZ42-2.jpg/640px-Lorenz-SZ42-2.jpg)
 
 Notes:
 > Cryptography or cryptology is the practice and study of techniques for secure communication in the presence of third parties called adversaries.
 
+### 密码学 (Cryptography/Cryptology)
 --
 
 ### 密码学 (Cryptology)
 
 > (from the Greek kryptós, "hidden," and lógos, "word") is the science of secure (or, generally speaking, secret) communication. 
 
---
+* 密码编码学 (Cryptography)
+* 密码分析学 (Cryptanalysis)
 
-### 密码编码学 (Cryptography)
-
+Notes:
 > was concerned initially with providing secrecy for written messages...
 
---
-
-### 密码分析学 
-
-> 
 
 --
 
 ### 术语 Terminology
 
-* cipher: algorithm for transforming plaintext to ciphertext
-* 明文 plaintext: message to be sent, in readable form
-* 密文 ciphertext: message in coded form
-* 加密 encrypt(encipher): turn plaintext into ciphertext
-* 解密 decrypt(decipher): turn ciphertext back into plaintext
-* 密码分析 cryptanalysis: cracking a code
+* cipher
+* 明文 plaintext
+* 密文 ciphertext
+* 加密 encrypt(encipher)
+* 解密 decrypt(decipher)
+
+Notes:
+* 密码分析 cryptanalysis
+    * algorithm for transforming plaintext to ciphertext
+    * message to be sent, in readable form
+    * message in coded form
+    * turn plaintext into ciphertext
+    * turn ciphertext back into plaintext
+    * the art and science of breaking the cipher text
+
+--
+
+### 必备知识(Prerequisites)
+
+* [离散数学 Discrete mathematics](https://en.wikipedia.org/wiki/Discrete_mathematics)
+* [模算数 Modular arithmetic](https://en.wikipedia.org/wiki/Modular_arithmetic)
+* [数论 Number Theory](https://en.wikipedia.org/wiki/Number_theory)
+* [概率论 Probability theory](https://en.wikipedia.org/wiki/Probability_theory)
+* [数学证明 Mathematical proof](https://en.wikipedia.org/wiki/Mathematical_proof)
+* ...
 
 --
 
@@ -44,13 +59,13 @@ Notes:
 
 * [Wikipedia: Cryptography](https://en.wikipedia.org/wiki/Cryptography)
 
---
+---
 
-### Cryptography Benefits
+### Why use Cryptography?
 
 * 信息的机密性 Confidentiality
-* 信息的认证性 Authentication
 * 信息的完整性 Integrity
+* 信息的认证性 Authentication
 * 信息的不可抵赖性（数字签名） Non-Repudiation
 
 --
@@ -111,13 +126,69 @@ Notes:
 
 --
 
-### Skytale
+### ROT
 
 > HELLO -> URYYB -> HELLO
+
+--
+### ROT13
 
 ![ROT13](https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/ROT13_table_with_example.svg/1000px-ROT13_table_with_example.svg.png)
 
 Note: ROT13 replaces each letter by its partner 13 characters further along the alphabet. 
+
+--
+### XOR encryption
+
+plaintext | "a" | "b" | "c"
+----|-----|-----|----
+Dec | 97 | 98 | 99
+Hex | 01100001 | 01100010 | 01100011
+x-Key | 01100100 | 01100100 | 01100100
+cipherHex | 00000101 | 00000110 | 00000111
+cipherDec | 5 | 6 | 7
+
+--
+### XOR decryption
+
+cipherDec | 5 | 6 | 7
+----|-----|-----|----
+binary | 00000101 | 00000110 | 00000111
+x-Key | 01100100 | 01100100 | 01100100
+result | 01100001 | 01100010 | 01100011
+Dec | 97 | 98 | 99
+ | "a" | "b" | "c"
+
+--
+### XOR decryption
+
+cipherDec | 5 | 6 | 7
+----|-----|-----|----
+binary | 00000101 | 00000110 | 00000111
+wrong-Key | 01101011 | 01101011 | 01101011
+result | 01101110 | 01101101 | 01101100
+Dec | 110 | 109 | 108
+ | "n" | "m" | "l"
+
+
+--
+
+Vigenère cipher
+
+![Vigenère cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Vigen%C3%A8re_square_shading.svg/600px-Vigen%C3%A8re_square_shading.svg.png)
+
+--
+![](https://pages.mtu.edu/~shene/NSF-4/Tutorial/VIG/FIG-VIG-Table-EX-M.jpg)
+
+--
+![](https://pages.mtu.edu/~shene/NSF-4/Tutorial/VIG/FIG-VIG-Table-EX-N.jpg)
+--
+
+* | string
+--------|-----------
+Plaintext: | ATTACKATDAWN
+Key | LEMONLEMONLE
+Ciphertext | LXFOPVEFRNHR
 
 --
 
@@ -190,19 +261,15 @@ Notes:
 [Cryptool online: RSA](https://www.cryptool.org/en/cto-highlights/rsa-step-by-step)
 
 
---
+---
+### 消息摘要和数字签名(Digital Signature)
 
 ![](https://www.docusign.com/sites/default/files/ds_subpage_diagram2.svg)
 
---
-
-### 消息摘要和数字签名(Digital Signature)
-
---
-
+Notes:
 ### Simple diagram of the process of digital Signing and verification
 
-![](https://cdn-images-1.medium.com/max/1400/1*UCn_xX0AOLxMKTb0xOeWfg.png)
+![](images/digital_signature_and_verification.png)
 
 --
 
@@ -256,6 +323,7 @@ Notes:
 * IPSec
 * X.509
 * ECC(Elliptic Curve Cryptography)
+* PKI(Public Key Infrastructure)
 
 --
 
@@ -282,6 +350,9 @@ Notes:
 * [Alan Turing Cryptography Competition](http://www.maths.manchester.ac.uk/cryptography_competition/archive.php)
 * [A slide of Cryptography](https://slides.com/kenilt/crytography/)
 * [redhat: Introduction to Public-Key Cryptography](https://access.redhat.com/documentation/en-US/Red_Hat_Certificate_System/8.1/html/Deploy_and_Install_Guide/Introduction_to_Public_Key_Cryptography.html)
+
+* [Cryptography Visualization Software](http://pages.mtu.edu/~shene/NSF-4/)
+
 ---
 
 # THE END
