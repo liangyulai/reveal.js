@@ -13,7 +13,7 @@
 4. User management & file access rights
 5. Compressing and archiving
 
-+++
+--
 change directory
 ```bash
 cd <dir> # change the current directory to <dir>
@@ -26,7 +26,7 @@ pwd    # print working directory
 ```
 ![cd](./content/images/bash_cd.svg)
 
-+++
+--
 listing files
 ```bash
 ls [opt] <file_name/directory_name>
@@ -38,10 +38,10 @@ ls *html # list all files end with "html"
 ls c*    # list all files/directories start with "c"
 ls -d c* # list only directories start with "c"
 ```
-+++
+--
 ![ls](./content/images/bash_ls.svg)
 
-+++
+--
 Directory manipulation
 ```bash
 mkdir [opt] <directory_name>
@@ -53,7 +53,7 @@ rmdir dir1 dir2 dir3 # only works when directories empty
 ```
 ![mkdir](./content/images/bash_dir.svg)
 
-+++
+--
 copy file
 ```sh
 cp [opt] <source_file> <target_file>
@@ -64,7 +64,7 @@ mv <old_name> <new_name>        # rename the given file/directory
 ```
 ![bash ls](./content/images/bash_cp.svg)
 
-+++
+--
 create & remove file
 ```sh
 touch <file>
@@ -84,7 +84,7 @@ rm -rf dir_b            # force remove directories
 4. User management & file access rights
 5. Compressing and archiving
 
-+++
+--
 concatenate and print files
 ```bash
 cat <file>
@@ -96,7 +96,7 @@ tail -f <file>  # continues to display new lines
 ```
 ![bash cat](./content/images/bash_cat.svg)
 
-+++
+--
 Searching for files
 ```bash
 find path [opt] [expression]
@@ -105,7 +105,7 @@ find path [opt] [expression]
 ```
 ![bash find](./content/images/bash_find.svg)
 
-+++
+--
 Searching within files
 ```bash
 grep [opt] <patern> <files>
@@ -118,11 +118,11 @@ grep [opt] <patern> <files>
 ```
 ![bash grep](./content/images/bash_grep.svg)
 
-+++
+--
 wildcards
 *?
 
-+++
+--
 reglar expression
 
 
@@ -135,25 +135,38 @@ reglar expression
 4. User management & file access rights
 5. Compressing and archiving
 
-+++
+--
+
 ```bash
 ps -f # full list
 ps -e # all processes
 ps ux
 ps aux
+```
 
+--
+
+```
 ctrl + c # kill current running process
 ctrl + z # stop current running process
+```
 
+--
+
+```
 jobs # background or suspended processes
 fg   # Move job to the foreground
 bg   # Move jobs to the background
+```
+--
 
+```
 kill <signal> <process-id>
 killall <process-name>
-
-+++
 ```
+
+--
+
 ![bash jobs](./content/images/bash_jobs.svg)
 
 ---
@@ -164,7 +177,7 @@ killall <process-name>
     > chmod sudo
 5. Compressing and archiving
 
-+++
+--
 ```bash
 chmod <permissions> <files>
 
@@ -177,10 +190,10 @@ chmod -R a+rw # add read/write to all recursively
 ```
 ![bash chmod](./content/images/bash_chmod.svg)
 
-+++
+--
 getfacl/setfacl
 
-+++
+--
 sudo
 
 ```bash
@@ -196,7 +209,7 @@ sudo [opt] [user] command
 5. **Compressing and archiving**
     > gzip/gunzip bzip2/bunzip2 tar
 
-+++
+--
 gzip
 ```bash
 g[un]zip <file>
@@ -211,11 +224,18 @@ tar zxvf temp.tar.gz
 ---
 miscellaneous
 
+```
 $LS_COLORS
 $PS1
+```
+--
 
+```
 - printenv
 - set/export/setenv
+```
+
+--
 
 ```bash
 bash as a login shell
@@ -225,6 +245,9 @@ bash as a login shell
     - ~/.profile      
     - ~/.bashrc       # loaded everytime you start a shell(e.g. starting terminal)
 ```
+
+--
+
 ```
 tcsh as a login shell
     - /etc/csh.cshrc
@@ -234,6 +257,7 @@ tcsh as a login shell
     - ~/.login
 ```
 
+--
 
 - rsync
 - diff
@@ -246,8 +270,32 @@ tcsh as a login shell
 - sort
 - wc
 - sleep
+
+--
+
+## Special Parameters
+* ($?)
+>Expands to the exit status of the most recently executed foreground pipeline. 
+* ($$) 
+>Expands to the process ID of the shell. In a () subshell, it expands to the process ID of the invoking shell, not the subshell. 
+* ($#) 
+>Expands to the number of positional parameters in decimal. 
+
+
+[Bash: Special-Parameters](https://www.gnu.org/software/bash/manual/bash.html#Special-Parameters)
+
+--
+device | description
+----|----
+/dev/stdin  | File descriptor 0 is duplicated.
+/dev/stdout | File descriptor 1 is duplicated.
+/dev/stderr | File descriptor 2 is duplicated.
+/dev/null | 
+/dev/zero | 
+
 ---
 reference 
 
-[TLDP](http://www.tldp.org/)
+* [TLDP(The Linux Documents Project)](http://www.tldp.org/)
+* [GNU Bash manual](https://www.gnu.org/software/bash/manual/bash.html)
 

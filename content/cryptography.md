@@ -248,7 +248,7 @@ Note:
 2. Bob can verify that Alice sent the message and that the message has not been modified.
 
 
-
+[Extended Euclidean algorithm](https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm)
 
 --
 ![digital signature](https://dzone.com/storage/temp/7395825-digitalsignature.png)
@@ -260,6 +260,7 @@ Note:
 
 [Cryptool online: RSA](https://www.cryptool.org/en/cto-highlights/rsa-step-by-step)
 
+--
 
 ---
 ### 消息摘要和数字签名(Digital Signature)
@@ -352,7 +353,42 @@ Note:
 * [redhat: Introduction to Public-Key Cryptography](https://access.redhat.com/documentation/en-US/Red_Hat_Certificate_System/8.1/html/Deploy_and_Install_Guide/Introduction_to_Public_Key_Cryptography.html)
 
 * [Cryptography Visualization Software](http://pages.mtu.edu/~shene/NSF-4/)
+* [Cryptography Tutorial](https://www.tutorialspoint.com/cryptography/index.htm)
+* [Introduction to Cryptography](https://gpgtools.tenderapp.com/kb/how-to/introduction-to-cryptography)
 
 ---
 
 # THE END
+
+--
+### [Cryptography I (on coursera)](https://www.coursera.org/learn/crypto)
+> by Stanford University
+
+#### Slides:
+
+ [1](http://spark-university.s3.amazonaws.com/stanford-crypto/slides/01-intro-v2-annotated.pdf)
+ [2](http://spark-university.s3.amazonaws.com/stanford-crypto/slides/02-stream-v2-annotated.pdf)
+ [3](http://spark-university.s3.amazonaws.com/stanford-crypto/slides/03-block-v2-annotated.pdf)
+ [4](http://spark-university.s3.amazonaws.com/stanford-crypto/slides/04-using-block-v2-annotated.pdf)
+ [5](http://spark-university.s3.amazonaws.com/stanford-crypto/slides/05-integrity-v2-annotated.pdf)
+ [6](http://spark-university.s3.amazonaws.com/stanford-crypto/slides/06-collision-resistance-v2-annotated.pdf)
+ [7](http://spark-university.s3.amazonaws.com/stanford-crypto/slides/07-authenc-v2-annotated.pdf)
+ [8](http://spark-university.s3.amazonaws.com/stanford-crypto/slides/08-odds-and-ends-v2-annotated.pdf)
+ [9](http://spark-university.s3.amazonaws.com/stanford-crypto/slides/09-basic-key-exchange-annotated.pdf)
+ [10](http://spark-university.s3.amazonaws.com/stanford-crypto/slides/10-numth-annotated.pdf)
+ [11](http://spark-university.s3.amazonaws.com/stanford-crypto/slides/11-pubkey-trapdoor-annotated.pdf)
+ [12](http://spark-university.s3.amazonaws.com/stanford-crypto/slides/12-pubkey-dh-annotated.pdf)
+
+
+--
+Free Electronic References
+
+
+[The Handbook of Applied Cryptography - Chapter 2](http://cacr.uwaterloo.ca/hac/)
+[A Computational Introduction to Number Theory and Algebra](https://shoup.net/ntb/)
+[Stick-figure introduction to AES](http://www.moserware.com/2009/09/stick-figure-guide-to-advanced.html)
+[The Udacity Applied Crypto course](https://www.udacity.com/course/applied-cryptography--cs387)
+[Coursera cryptography course](https://www.coursera.org/learn/crypto)
+[Algorithms by DPV - Chapter 1.2-1.4](http://algorithmics.lsi.upc.edu/docs/Dasgupta-Papadimitriou-Vazirani.pdf)
+[CMSC 456 --- Introduction to Cryptography](http://www.cs.umd.edu/~jkatz/crypto/s18/lectures.html)
+[Introduction to Modern Cryptography (2nd edition)](http://www.cs.umd.edu/~jkatz/imc.html)
